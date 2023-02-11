@@ -11,7 +11,7 @@ function evenNumbers( n: number ){
     };
 };  
 
-evenNumbers(25);
+//evenNumbers(25);
 
 /* 
 Realizar una función que como parámetro de entrada reciba un array y como salida
@@ -28,7 +28,7 @@ function myRevert(myArr:number[]){
 
 let array1:number[] = [1,2,3,4,5];  // Conflicto con las variables, por el tipo: solucion realizada declararla number
 
-myRevert(array1);
+//myRevert(array1);
 
 /* 
 Realizar una función que reciba como parámetro un array de strings que contenga
@@ -47,7 +47,7 @@ function isRainbow( colors ){
     };
 };
 
-isRainbow("violeta");  
+//isRainbow("violeta");  
 
 
 /* 
@@ -63,7 +63,8 @@ function add(myWords){
     for( let i = 0 ; i < myWords.length ; i++){
         suma += myWords[i].length;
     };
-    console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Tradicional`);
+    return suma;
+    //console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Tradicional`);
 };
 
 // CON FOR OF
@@ -72,11 +73,12 @@ function add2(myWords){
     for ( let arrW of arrMyWords){
         suma += arrW.length;
     };
-    console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Of`);
+    return suma;
+    //console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Of`);
 };
 
-add(arrMyWords);
-add2(arrMyWords);
+//add(arrMyWords);
+//add2(arrMyWords);
 
 
 export { add }

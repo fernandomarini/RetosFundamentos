@@ -33,7 +33,7 @@ function zodiac( day: number, month: number){
     };
 };
 
-zodiac(11,4);
+//zodiac(11,4);
 
 /* 
 Realizar un procedimiento que dado el nombre de un país te imprima en que continente
@@ -68,7 +68,7 @@ function continent(country: string){
     console.log(`El pais ${country} pertenece al continente ${cont} \n`)
 };
 
-continent("Espanya");
+//continent("Espanya");
 
 
 /* Realizar una función que te imprima por consola el siguiente mensaje:
@@ -77,15 +77,15 @@ continent("Espanya");
 
 function isEven(n){
     if( n % 2 == 0){
-        console.log(`El numero ${n} es par.`);
+        console.log(`El numero es par.`);
     }else{
-        console.log(`El numero ${n} es inpar.`);
+        console.log(`El numero es impar.`);
     };
 };
 
 
 
-isEven(6);
+//isEven(6);
 
 
 export { isEven }
