@@ -22,7 +22,17 @@ class Point{
         return coordenadasString
     };
 
+    public distanceTolOrigin():number {
+        let distOrigen: number = Math.sqrt(( Math.pow(this.x,2) ) + ( Math.pow(this.y,2)))
+        return distOrigen
+    };
 
+    public calculateDistance( x2: number, y2: number):number { // d=√((x2-x1)²+(y2-y1)²) 
+        let distAnoth: number = Math.sqrt(( Math.pow(( x2 - this.x),2) ) + ( Math.pow(( y2 - this.y ),2)))
+        return distAnoth
+    };  
+
+    
 };
 
 
