@@ -27,6 +27,10 @@ class MobileCollection {
         return acumulador;
     };
 
+    public printCollection(){
+            console.log(`       This is all my mobiles: \n `); 
+            for ( let mob of this.mobiles ){ mob.toPrintAt() };
+    };
 
 };
 

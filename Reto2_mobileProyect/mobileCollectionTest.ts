@@ -11,3 +11,5 @@ let myMoviles = [ S22 , S22L , S22U , S23 ];
 let myCollection = new MobileCollection(myMoviles);
 
 console.log(myCollection);
+
+myCollection.printCollection();
