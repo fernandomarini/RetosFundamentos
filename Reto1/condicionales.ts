@@ -75,7 +75,7 @@ continent("Espanya");
 - “El numero es par”, si el numero introducido como parámetro de entrada es par
 - “El numero es impar”, si el numero introducido como parámetro de entrada es impar */
 
-function isEven(n:number){
+function isEven(n){
     if( n % 2 == 0){
         console.log(`El numero ${n} es par.`);
     }else{
@@ -88,3 +88,4 @@ function isEven(n:number){
 isEven(6);
 
 
+export { isEven }

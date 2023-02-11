@@ -78,3 +78,5 @@ function add2(myWords){
 add(arrMyWords);
 add2(arrMyWords);
 
+
+export { add }
