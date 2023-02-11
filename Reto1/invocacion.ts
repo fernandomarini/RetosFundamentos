@@ -8,5 +8,5 @@ let arr2 = ["barco", "baca", "bicicleta", "balon" , "bisiesto", "brasil"];
 let arr3 = [ "venezuela", "venenro", "voltaje"];
 
 isEven(add(arr1));
-isEven(arr2);
-isEven(arr3);
+isEven(add(arr2));
+isEven(add(arr3));
