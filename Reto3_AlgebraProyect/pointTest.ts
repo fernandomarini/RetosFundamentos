@@ -8,3 +8,5 @@ console.log(coordenada1.toString());
 console.log(coordenada1.distanceTolOrigin());
 
 console.log(coordenada1.calculateDistance(8,6));
+
+console.log(coordenada1.calcularQuadrant());

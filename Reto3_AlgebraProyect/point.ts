@@ -32,6 +32,21 @@ class Point{
         return distAnoth
     };  
 
+    public calcularQuadrant():number {
+        let cuadrante: number = 0;
+        if( this.x == 0 || this.y == 0){
+            cuadrante = 0;
+        } else if ( this.x > 0 && this.y > 0){
+            cuadrante = 1;
+        } else if ( this.x < 0 && this.y > 0){
+           cuadrante = 2;
+        } else if ( this.x < 0 && this.y < 0){
+            cuadrante = 3;
+        } else if ( this.x > 0 && this.y < 0){
+            cuadrante = 4;
+        }; 
+        return cuadrante
+    };
     
 };
 
