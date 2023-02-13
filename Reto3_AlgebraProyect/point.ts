@@ -60,10 +60,8 @@ class Point{
             };            
         };
         return closest
-    };
-    
-
-    
+    };    
+   
 };
 
 
