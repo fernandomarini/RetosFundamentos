@@ -23,11 +23,11 @@ function myRevert(myArr:number[]){
     for( let i = 0 ; i < myArr.length ; i++){
         arrRever.unshift(myArr[i]);
     };
-    console.log(arrRever);
+    return(arrRever);
 };
 
 let array1:number[] = [1,2,3,4,5];  
-myRevert(array1);
+console.log(myRevert(array1));
 
 
 /* 

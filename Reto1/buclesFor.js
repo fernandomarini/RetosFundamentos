@@ -25,11 +25,11 @@ function myRevert(myArr) {
         arrRever.unshift(myArr[i]);
     }
     ;
-    console.log(arrRever);
+    return (arrRever);
 }
 ;
 var array1 = [1, 2, 3, 4, 5];
-myRevert(array1);
+console.log(myRevert(array1));
 /*
 Realizar una función que reciba como parámetro un array de strings que contenga
 nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.

@@ -9,42 +9,40 @@
  function hasEven(myNums:number[]){
     let i = 0;
     let n:number = 0;
-    while( i < array.length){
-        n = myNums[i];
+    while( i < array.length && n % 2 == 0 ){            
+        return "Existe un numero par."
         i++;
-        while(n % 2 == 0){
-            console.log(`Numero par: ${n}`);
-            break;
-        };
     };
- };
+};
 
- hasEven(array);
+ console.log(hasEven(array));
 
 /* 
  Realizar una función que reciba un array de nombres y te devuelva verdadero si y solo si
 todos los nombres empiezan por M.
 La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames) */
 
-let nombres1 = ["marta", "martin", "matilda","mabel"];
-let nombres2 =["ramiro","fernando","ariel"];
+let nombres1 :string[] = ["marta", "martin", "matilda","mabel"];
+let nombres2 :string[] =["ramiro","fernando","ariel"];
 
-function startWithM (myNames=[]){
+function startWithM ( myNames:string[] ){
     let i = 0;
-    do{
-        if( myNames[i][0] != "m" ){
-            break;            
-        };         
-        if( ( myNames.length -1 ) == i ){ 
-            console.log(`VERDADERO, todos los nombres comienzan con M`); 
-        };
-        i++;        
-    }while( i < myNames.length && myNames[i][0] == "m")
-    
+    while( i < myNames.length && myNames[i][i] == "m" )
+   return true;
+    i++
 };
 
 
-//startWithM(nombres1);
-startWithM(nombres2);
+console.log(`Los nombres comienzan con M, es ${startWithM(nombres1)}`);
 
-
+/* 
+let i = 0;
+do{
+    if( myNames[i][0] != "m" ){
+        break;            
+    };         
+    if( ( myNames.length -1 ) == i ){ 
+        console.log(`VERDADERO, todos los nombres comienzan con M`); 
+    };
+    i++;        
+}while( i < myNames.length && myNames[i][0] == "m") */
