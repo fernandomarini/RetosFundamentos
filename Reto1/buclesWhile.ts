@@ -30,7 +30,7 @@ let nombres2 :string[] =["ramiro","fernando","ariel"];
 
 function startWithM ( myNames:string[] ){
     let i = 0;
-    while( i < myNames.length && myNames[i][i] != "m" ){    
+    while( i < myNames.length && myNames[i][0] != "m" ){    
     i++    
     };
     if(i != myNames.length ){
