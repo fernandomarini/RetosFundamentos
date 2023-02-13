@@ -40,12 +40,12 @@ Realizar un procedimiento que dado el nombre de un país te imprima en que conti
 estás. (Max 5 países por continente).
 La cabecera del procedimiento tendrá el siguiente aspecto: function continent(country) */
 
-let europa: string [];
-let americaNorte:string [];
-let sudamerica: string [];
-let asia: string [];
-let africa: string [];
-let oceania: string[];
+let europa;
+let americaNorte;
+let sudamerica;
+let asia;
+let africa;
+let oceania;
 
 
 europa = ["Espanya","Portugal","Italia","Alemania","Francia"];
@@ -55,20 +55,25 @@ asia = ["China","Japon","Indonesia","India","Korea"];
 africa = ["Sudafrica","Kongo","Kenia","Ghana","Marruecos"];
 oceania = ["Australia","Nueva Zelanda","Fiyi","Samoa","Tonga"];
 
-let continentes = [europa, americaNorte, sudamerica, asia, africa, oceania];
-let continentes2 = ["europa", "americaNorte", "sudamerica", "asia", "africa", "oceania"]; // Creado de Mas, xq no fallaba *
-
 function continent(country: string){
-    let cont = "";
-    for(let i = 0 ; i < continentes.length ; i++ ){ 
-        if ( country == continentes[i][i]){
-            cont = continentes2[i];   //  * Fallaba que me imprimia el array entero
-        }; 
+    if( europa.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente Europa \n`)
+    } else if ( americaNorte.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente America del Norte \n`)
+    } else if ( sudamerica.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente Sur America \n`)
+    } else if ( asia.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente Asia \n`)
+    } else if ( africa.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente Africa \n`)
+    } else if ( oceania.includes(country) ){
+        console.log(`El pais ${country} pertenece al continente Oceania \n`)
+    }  else {
+        console.log(`El pais ingresado no es valido \n`)
     };
-    console.log(`El pais ${country} pertenece al continente ${cont} \n`)
 };
 
-//continent("Espanya");
+continent("Argentina");
 
 
 /* Realizar una función que te imprima por consola el siguiente mensaje:
@@ -84,8 +89,7 @@ function isEven(n){
 };
 
 
-
-//isEven(6);
+isEven(6);
 
 
 export { isEven }

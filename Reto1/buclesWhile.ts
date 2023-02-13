@@ -1,4 +1,5 @@
- /* 
+
+/* 
  Realizar una función que te devuelva si existe un numero par en el array de números que 
  introduces como parámetro de entrada.
  La cabecera de la función tendrá el siguiente aspecto: function hasEven(myNums) */

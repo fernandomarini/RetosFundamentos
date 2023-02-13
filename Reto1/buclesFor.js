@@ -14,7 +14,7 @@ function evenNumbers(n) {
     ;
 }
 ;
-//evenNumbers(25);
+evenNumbers(25);
 /*
 Realizar una función que como parámetro de entrada reciba un array y como salida
 devuelva el array revertido. No se puede utilizar el método revert de la clase array
@@ -28,27 +28,27 @@ function myRevert(myArr) {
     console.log(arrRever);
 }
 ;
-var array1 = [1, 2, 3, 4, 5]; // Conflicto con las variables, por el tipo: solucion realizada declararla number
-//myRevert(array1);
+var array1 = [1, 2, 3, 4, 5];
+myRevert(array1);
 /*
 Realizar una función que reciba como parámetro un array de strings que contenga
 nombres de colores y te imprima en cada caso si el color está en el arcoíris o no.
 La cabecera de la función tendrá el siguiente aspecto: function isRainbow(colors) */
-var rainbow = ["rojo", "naranja", "amarillo", "verde", "anyil", "azul", "violeta"];
-function isRainbow(colors) {
+var rainbow = ["azul", "celeste", "verde", "rosa"];
+function isRainbow(rainbow) {
     for (var i = 0; i < rainbow.length; i++) {
-        if (colors = !rainbow[i]) {
-            console.log("El color ".concat(colors, "} No esta en el Arco Iris."));
+        if (rainbow[i] == "rojo" || rainbow[i] == "naranja" || rainbow[i] == "amarillo" || rainbow[i] == "verde" || rainbow[i] == "anyil" || rainbow[i] == "azul" || rainbow[i] == "violeta") {
+            console.log("El color ".concat(rainbow[1], "} Pertenece al Arco Iris."));
         }
         else {
-            console.log("El color ".concat(colors, " esta en el Arco Iris.")); // ERROR: Imprime false en el lugar de la variable "colors".
+            console.log("El color ".concat(rainbow, " No esta en el Arco Iris."));
         }
         ;
     }
     ;
 }
 ;
-//isRainbow("violeta");  
+isRainbow(rainbow);
 /*
 Realizar una función que te devuelva la suma del numero de caracteres de las palabras
 almacenadas en un array.
@@ -62,7 +62,6 @@ function add(myWords) {
     }
     ;
     return suma;
-    //console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Tradicional`);
 }
 exports.add = add;
 ;
@@ -75,6 +74,7 @@ function add2(myWords) {
     }
     ;
     return suma;
-    //console.log(`La suma de carcteres de las palabras del array es: ${suma} y fue calculada con un For Of`);
 }
 ;
+console.log("\n La suma de carcteres de las palabras del array es: ".concat(add(arrMyWords), " y fue calculada con un For Tradicional \n"));
+console.log("\n La suma de carcteres de las palabras del array es: ".concat(add2(arrMyWords), " y fue calculada con un For Of \n"));
