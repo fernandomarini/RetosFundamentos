@@ -28,7 +28,7 @@ var Point = /** @class */ (function () {
     };
     ;
     Point.prototype.calculateDistance = function (anotherPoint) {
-        var distAnoth = Math.sqrt((Math.pow((anotherPoint.getX - this.x), 2)) + (Math.pow((anotherPoint.getY - this.y), 2)));
+        var distAnoth = Math.sqrt((Math.pow((anotherPoint.getX() - this.x), 2)) + (Math.pow((anotherPoint.getY() - this.y), 2)));
         return distAnoth;
     };
     ;
@@ -51,6 +51,20 @@ var Point = /** @class */ (function () {
         }
         ;
         return cuadrante;
+    };
+    ;
+    Point.prototype.calculateNearest = function (points) {
+        var d = this.calculateDistance(points[0]);
+        var closest;
+        for (var i = 0; i < points.length; i++) {
+            if (this.calculateDistance(points[i]) < d) {
+                d = this.calculateDistance(points[i]);
+                closest = points[i];
+            }
+            ;
+        }
+        ;
+        return closest;
     };
     ;
     return Point;
