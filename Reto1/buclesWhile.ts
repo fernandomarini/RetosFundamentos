@@ -8,7 +8,7 @@
 
  function hasEven(myNums:number[]){
     let i = 0;
-    while( i < array.length && myNums[i] % 2 == 1 ){          
+    while( i < array.length && myNums[i] % 2 != 0 ){          
        i++;
     };
     if( i != myNums.length){
