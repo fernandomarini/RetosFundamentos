@@ -27,8 +27,14 @@ class Point{
         return distOrigen
     };
 
+<<<<<<< HEAD
     public calculateDistance( anotherPoint: Point ):number { // d=√((x2-x1)²+(y2-y1)²) 
         let distAnoth: number = Math.sqrt(( Math.pow(( anotherPoint.getX - this.x),2) ) + ( Math.pow(( anotherPoint.getY - this.y ),2)))
+=======
+    public calculateDistance( anotherPoint: Point):number { // d=√((x2-x1)²+(y2-y1)²) 
+
+        let distAnoth: number = Math.sqrt(( Math.pow(( anotherPoint.getX() - this.x),2) ) + ( Math.pow(( anotherPoint.getY() - this.y ),2)))
+>>>>>>> repaso4
         return distAnoth
     };  
 
@@ -47,10 +53,31 @@ class Point{
         }; 
         return cuadrante
     };
+<<<<<<< HEAD
 /* 
+=======
+
+    public calculateNearest( points:Point[]):Point {
+        let d = 0;
+
+        for( let i = 0 ; i < points.length ; i++ ){ 
+                if ( this.calculateDistance[i] < this.calculateDistance[i] ) {
+                    
+
+            }
+        };
+    };
+    
+    
+>>>>>>> repaso4
 };
 
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> repaso4
 export { Point }
